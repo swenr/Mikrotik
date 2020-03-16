@@ -1,14 +1,14 @@
 = Mikrotik
 
-Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* gaan we onderzoeken. Met vallen en opstaan!
+Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* ga ik onderzoeken. Met vallen en opstaan!
 
-We beginnen met Mikrotik.
+Ik begin met Mikrotik.
 
 == Mikrotik CHR
-In deze oefeningen gebruiken we https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router die bedoeld is om in een virtuele omgeving gebruikt te worden. We zullen deze router gebruiken in de GNS3 simulatiesoftware. 
+In deze oefeningen gebruik ik https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router die bedoeld is om in een virtuele omgeving gebruikt te worden. Ik zal deze router gebruiken in GNS3. 
 
 == Statische Routes IPv4
-We gaan volgend netwerk nabouwen in GNS3:
+Ik ga volgend netwerk opbouwen in GNS3:
 
 image::images/image1.png[]
 
