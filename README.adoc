@@ -6,7 +6,7 @@ We beginnen met Mikrotik
 == Mikrotik CHR
 In deze oefeningen gebruiken we https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router die bedoeld is om in een virtuele omgeving gebruikt te worden. We zullen deze router gebruiken in de GNS3 simulatiesoftware. 
 
-== Statische Routes
+== Statische Routes IPv4
 We gaan volgend netwerk nabouwen in GNS3:
 
 image::images/image1.png[]
@@ -24,6 +24,7 @@ image::images/image1.png[]
     add distance=1 dst-address=192.168.30.0/24 gateway=10.0.3.1
 
 Check:
+
     ip add   print
     ip route print
 
@@ -40,6 +41,7 @@ Check:
     add distance=1 dst-address=192.168.30.0/24 gateway=10.0.1.2
 
 Check:
+
     ip add   print
     ip route print
 
@@ -56,6 +58,7 @@ Check:
     add distance=1 dst-address=192.168.30.0/24 gateway=10.0.2.2
 
 Check:
+
     ip add   print
     ip route print
 
@@ -72,6 +75,7 @@ Check:
     add distance=1 dst-address=192.168.20.0/24 gateway=10.0.2.1
 
 Check:
+
     ip add   print
     ip route print
 
