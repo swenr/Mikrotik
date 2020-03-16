@@ -1,7 +1,8 @@
 = Mikrotik
 
-Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* gaan we vandaag onderzoeken. Met vallen en opstaan!
-We beginnen met Mikrotik
+Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* gaan we onderzoeken. Met vallen en opstaan!
+
+We beginnen met Mikrotik.
 
 == Mikrotik CHR
 In deze oefeningen gebruiken we https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router die bedoeld is om in een virtuele omgeving gebruikt te worden. We zullen deze router gebruiken in de GNS3 simulatiesoftware. 
