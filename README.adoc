@@ -1,0 +1,6 @@
+= Mikrotik
+Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* gaan we vandaag onderzoeken. Met vallen en opstaan!
+We beginnen met Mikrotik
+
+== Mikrotik CHR
+In deze oefenignen gebruiken we https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router met RputerOS die bedoeld is om in een virtuele omgeving gebruikt te worden. 
