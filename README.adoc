@@ -1,4 +1,5 @@
 = Mikrotik
+
 Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* gaan we vandaag onderzoeken. Met vallen en opstaan!
 We beginnen met Mikrotik
 
