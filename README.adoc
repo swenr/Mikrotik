@@ -5,7 +5,7 @@ Rudi Swennen
 :lang: nl
 :toc: left
 
-Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* ga ik onderzoeken. Met vallen en opstaan!
+Als systeem- en netwerkbeheerder besef ik dat er naast **Cisco** ook nog iets *anders* bestaat om een netwerk gestalte te geven en dat *anders* ga ik onderzoeken. Met vallen en opstaan!
 
 Ik begin met Mikrotik.
 
@@ -84,6 +84,11 @@ Check:
 
     ip add   print
     ip route print
+
+
+== Statische Routes IPv6
+
+
 
 == Referentie
 https://wiki.mikrotik.com/wiki/Manual:Simple_Static_Routing
