@@ -1,4 +1,9 @@
 = Mikrotik
+Rudi Swennen
+:doctype: article
+:encoding: utf-8
+:lang: nl
+:toc: left
 
 Als lector systemen en netwerken is er naast Cisco nog iets *anders* op de markt van netwerken en dat *anders* ga ik onderzoeken. Met vallen en opstaan!
 
@@ -37,9 +42,9 @@ Check:
     add address=10.0.0.2/24     interface=ether3 network=10.0.0.0
     /ip route
     add distance=1 dst-address=192.168.0.0/24  gateway=10.0.0.1
-    add distance=1 dst-address=192.168.20.0/24 gateway=10.0.1.2
     add distance=1 dst-address=192.168.30.0/24 gateway=10.0.0.1
     add distance=1 dst-address=192.168.30.0/24 gateway=10.0.1.2
+    add distance=1 dst-address=192.168.20.0/24 gateway=10.0.1.2
 
 Check:
 
