@@ -167,5 +167,5 @@ Na twee uur zoeken uiteindelijk gevonden dat de PC's in GNS3 de RA van Mikrotik 
 IMPORTANT: uitzoeken of de PC's van GNS3 dat bij alle RA hebben? De RA van Mikrotik ziet per perfect uit. 
 
 == Referentie
-https://wiki.mikrotik.com/wiki/Manual:Simple_Static_Routing
-https://wiki.mikrotik.com/wiki/Manual:Simple_Static_IPv6_Routing
+* https://wiki.mikrotik.com/wiki/Manual:Simple_Static_Routing
+* https://wiki.mikrotik.com/wiki/Manual:Simple_Static_IPv6_Routing
