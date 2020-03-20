@@ -179,7 +179,6 @@ De configuratie van Router R1:
     /interface vlan
     add interface=ether1 name=LEFT vlan-id=10
     add interface=ether1 name=RIGHT vlan-id=20
-
     /ip address
     add address=10.0.0.1/24 interface=LEFT network=10.0.0.0
     add address=20.0.0.1/24 interface=RIGHT network=20.0.0.0
@@ -192,7 +191,8 @@ Volgend netwerk zal opgebouwd worden:
 
 image::images/image3.png[]
 
-=== Router R1
+De configuratie van Router R1:
+
     /ip address
     add address=1.1.1.1 interface=loopback0 network=1.1.1.1
     add address=10.10.0.2/24 interface=ether1 network=10.10.0.0
@@ -208,7 +208,8 @@ Check:
     ip add   print
     ip route print
 
-=== Router R2
+De configuratie van Router R2:
+
     /routing ospf area
     add area-id=0.0.0.1 name=left
     /ip address
@@ -225,7 +226,8 @@ Check:
     ip add   print
     ip route print
 
-=== Router R3
+De configuratie van Router R3: 
+
     /routing ospf area
     add area-id=0.0.0.2 name=right
     /ip address
@@ -243,7 +245,8 @@ Check:
     ip add   print
     ip route print
 
-=== Router R4
+De configuratie van Router R4: 
+
     /routing ospf area
     add area-id=0.0.0.1 name=left
     /ip address
