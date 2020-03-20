@@ -175,6 +175,7 @@ image::images/image4.png[]
 PC1 zit in VLAN 10, PC2 zit in VLAN2 0, PC3 zit in VLAN 1. De ether1 interface van de router is voorzien van twee VLAN-sub-interfaces LEFT (VID 10) en RIGHT (VID 20). Untagged traffic (native VLAN) komt terecht op ether0.
 
 De configuratie van Router R1:
+
     /interface vlan
     add interface=ether1 name=LEFT vlan-id=10
     add interface=ether1 name=RIGHT vlan-id=20
