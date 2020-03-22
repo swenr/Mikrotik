@@ -192,6 +192,7 @@ image::images/image5.png[]
 De configuratie van de DHCP-SERVER, R2:
 
 * Selecteer **netwerken** voor de DHCP-server:
+
     /ip dhcp-server network
     add address=10.0.0.0/24   gateway=10.0.0.1 dns-server=8.8.8.8
     add address=20.0.0.0/24   gateway=20.0.0.1 dns-server=8.8.8.8
@@ -199,6 +200,7 @@ De configuratie van de DHCP-SERVER, R2:
     add address=66.66.66.0/24 gateway=66.66.66.2 dns-server=8.8.8.8
 
 * Maak de **nodige pools** aan (welke adressen mogen uitgedeeld worden):
+
     /ip pool 
     add name=vlan10-pool ranges=10.0.0.10-10.0.0.50
     add name=vlan20-pool ranges=20.0.0.10-20.0.0.50,20.0.0.60-20.0.0.67
@@ -206,6 +208,7 @@ De configuratie van de DHCP-SERVER, R2:
     add name=66netwerk ranges=66.66.66.50-66.66.66.100
 
 * Link de DHCP-server aan een interface (als er meerdere DHCP-servers aan een interface hangen, maar er een server dienen voor het netwerk, de andere moeten klaarstaan voor een relay):
+
     /ip dhcp-server
     add interface=ether2 relay=10.0.0.1 address-pool=vlan10-pool disabled=no
     add interface=ether2 relay=20.0.0.1 address-pool=vlan20-pool disabled=no
@@ -213,24 +216,6 @@ De configuratie van de DHCP-SERVER, R2:
     add interface=ether2 address-pool=66netwerk disabled=no
 
 
-[admin@DHCP-Server] ip dhcp-server> print
-Flags: X - disabled, I - invalid
- #   NAME         INTERFACE     RELAY           ADDRESS-POOL LEASE-TIME ADD-ARP
- 0   DHCP-1       To-DHCP-Relay 192.168.1.1     Local1-Pool  3d00:00:00
- 1   DHCP-2       To-DHCP-Relay 192.168.2.1     Local2-Pool  3d00:00:00
-[admin@DHCP-Server] ip dhcp-server>
-
-Configure respective networks:
-
-/ip dhcp-server network add address=192.168.1.0/24 gateway=192.168.1.1 \
-   dns-server=159.148.60.20
-/ip dhcp-server network add address=192.168.2.0/24 gateway=192.168.2.1 \
-   dns-server 159.148.60.20
-[admin@DHCP-Server] ip dhcp-server network> print
- # ADDRESS            GATEWAY         DNS-SERVER      WINS-SERVER     DOMAIN
- 0 192.168.1.0/24     192.168.1.1     159.148.60.20
- 1 192.168.2.0/24     192.168.2.1     159.148.60.20
-[admin@DHCP-Server] ip dhcp-server network>
 
 
 
