@@ -216,9 +216,6 @@ De configuratie van de DHCP-SERVER, R2:
     add interface=ether2 address-pool=66netwerk disabled=no
 
 
-
-
-
 == Multi Area OSPFv2
 
 Volgend netwerk zal opgebouwd worden:
@@ -239,8 +236,9 @@ De configuratie van Router R1:
 
 Check:
 
-    ip add   print
-    ip route print
+    /ip add print
+    /routing ospf neighbor print
+    /ip route print where ospf
 
 De configuratie van Router R2:
 
@@ -257,8 +255,9 @@ De configuratie van Router R2:
 
 Check:
 
-    ip add   print
-    ip route print
+    /ip add print
+    /routing ospf neighbor print
+    /ip route print where ospf
 
 De configuratie van Router R3: 
 
@@ -276,8 +275,9 @@ De configuratie van Router R3:
 
 Check:
 
-    ip add   print
-    ip route print
+    /ip add print
+    /routing ospf neighbor print
+    /ip route print where ospf
 
 De configuratie van Router R4: 
 
@@ -295,8 +295,9 @@ De configuratie van Router R4:
 
 Check:
 
-    ip add   print
-    ip route print
+    /ip add print
+    /routing ospf neighbor print
+    /ip route print where ospf
 
 === Router R5
     /routing ospf area
@@ -313,8 +314,9 @@ Check:
 
 Check:
 
-    ip add   print
-    ip route print
+    /ip add print
+    /routing ospf neighbor print
+    /ip route print where ospf
 
 == OSPFv3
 
