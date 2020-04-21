@@ -2,6 +2,8 @@
 
 Anycast is een "speciaal" effect van routeringsprotocollen. Als op twee verschillende plaatsen in het netwerk hetzelfde IP-adres terug te vinden is, zal vb. OSPF verschillende routes vinden tot deze plaatsen of IP-adressen in het netwerk. 
 
+Waarvoor zou je Anycast gebruiken? Om op verschillende plaatsen binnen je netwerk toegang te krijgen tot eenzelfde (eigenlijk meerdere, maar bereikbaar op verschillende plaatsen van dezelfde service) *STATELESS* service! Waarom statless?
+
 Neem onderstaand netwerk: 
 
 image:images/pic1.png[]
