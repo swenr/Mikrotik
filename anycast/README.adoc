@@ -43,7 +43,15 @@ image:images/pic1.png[]
 
 
 == Client config
-De clients draaien FreeBSD met frr. FreeBSD heeft standaard geen lo1. Deze creëer je met volgend commando `ifconfig lo1 create`.
+De clients draaien FreeBSD met frr:
+* pkg install frr7
+* touch /usr/local/etc/ffr/frr.conf
+* service frr onestart
+* vtysh [-f /usr/local/etc/ffr/frr.conf]
+
+In frr sla je de config op met het commando `wr` cfr. Cisco routers. 
+
+FreeBSD heeft standaard geen lo1. Deze creëer je met volgend commando `ifconfig lo1 create`.
 
 === Client 1
 
