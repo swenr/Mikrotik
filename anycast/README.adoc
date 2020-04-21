@@ -16,6 +16,8 @@ image:images/pic1.png[]
     /routing ospf network
     add area=backbone network=10.10.10.0/24
     add area=backbone network=20.0.0.0/24
+    /system identity
+    set name=R1
 
 === R2
 
@@ -25,6 +27,8 @@ image:images/pic1.png[]
     /routing ospf network
     add area=backbone network=20.0.0.0/24
     add area=backbone network=30.0.0.0/24
+    /system identity
+    set name=R2
 
 === R3
 
@@ -34,10 +38,12 @@ image:images/pic1.png[]
     /routing ospf network
     add area=backbone network=40.0.0.0/24
     add area=backbone network=30.0.0.0/24
+    /system identity
+    set name=R3
 
 
 == Client config
-De clients draaien FreeBSD met frr
+De clients draaien FreeBSD met frr. FreeBSD heeft standaard geen lo1. Deze creëer je met volgend commando `ifconfig lo1 create`.
 
 === Client 1
 
