@@ -44,6 +44,7 @@ image:images/pic1.png[]
 
 == Client config
 De clients draaien FreeBSD met frr:
+
 * pkg install frr7
 * touch /usr/local/etc/ffr/frr.conf
 * service frr onestart
