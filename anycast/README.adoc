@@ -74,4 +74,4 @@ Om te controleren of "anycast" werkt zou:
     [admin@R2] >
 
 == Problemen
-Let er wel zeer goed op dat de router-id's verschillend zijn op alle routers!
+Let er wel zeer goed op dat de router-id's verschillend zijn op alle routers. Dit kan je controleren met volgend commando `/routing ospf neighbor print`.
