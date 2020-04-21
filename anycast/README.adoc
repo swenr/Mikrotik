@@ -86,3 +86,6 @@ Om te controleren of "anycast" werkt zou:
 
 == Problemen
 Let er wel zeer goed op dat de router-id's verschillend zijn op alle routers. Dit kan je controleren met volgend commando `/routing ospf neighbor print`.
+
+=== Referentie
+* https://wiki.mikrotik.com/wiki/Manual:OSPF-examples => router-id aanpassen alleen voor OSPF.
