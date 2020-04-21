@@ -47,11 +47,11 @@ De clients draaien FreeBSD met frr. FreeBSD heeft standaard geen lo1. Deze creë
 
 === Client 1
 
-image:images/client1.png[]
+image:images/client1.png[50x50]
 
 === Client 2
 
-image:images/client2.png[]
+image:images/client2.png[30x30]
 
 == Controle
 Om te controleren of "anycast" werkt zou:
