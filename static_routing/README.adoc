@@ -1,4 +1,10 @@
 = Statische Routes IPv4
+Rudi Swennen
+:doctype: article
+:encoding: utf-8
+:lang: nl
+:toc: left
+
 Ik ga volgend netwerk opbouwen in GNS3:
 
 image::images/image1.png[]

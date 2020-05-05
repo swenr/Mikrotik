@@ -12,23 +12,6 @@ Ik begin met Mikrotik.
 == Mikrotik CHR
 In deze oefeningen gebruik ik https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router die bedoeld is om in een virtuele omgeving gebruikt te worden. Ik zal deze router gebruiken in GNS3. 
 
-== Router on a stick
-Volgend netwerk zal opgebouwd worden:
-
-image::images/image4.png[]
-
-PC1 zit in VLAN 10, PC2 zit in VLAN2 0, PC3 zit in VLAN 1. De ether1 interface van de router is voorzien van twee VLAN-sub-interfaces LEFT (VID 10) en RIGHT (VID 20). Untagged traffic (native VLAN) komt terecht op ether0.
-
-De configuratie van Router R1:
-
-    /interface vlan
-    add interface=ether1 name=LEFT vlan-id=10
-    add interface=ether1 name=RIGHT vlan-id=20
-    /ip address
-    add address=10.0.0.1/24 interface=LEFT network=10.0.0.0
-    add address=20.0.0.1/24 interface=RIGHT network=20.0.0.0
-    add address=99.0.0.1/24 interface=ether1 network=99.0.0.0
-
 == DHCPv4 server + DHCP relay
 Volgend netwerk zal opgebouwd worden:
 
