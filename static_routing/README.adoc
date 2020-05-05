@@ -1,9 +1,12 @@
-= Statische Routes IPv4
+= Static Routing
 Rudi Swennen
 :doctype: article
 :encoding: utf-8
 :lang: nl
 :toc: left
+
+
+= Statische Routes IPv4
 
 Ik ga volgend netwerk opbouwen in GNS3:
 
