@@ -12,39 +12,6 @@ Ik begin met Mikrotik.
 == Mikrotik CHR
 In deze oefeningen gebruik ik https://wiki.mikrotik.com/wiki/Manual:CHR[Mikrotik CHR]. Dit is een Mikrotik virtuele router die bedoeld is om in een virtuele omgeving gebruikt te worden. Ik zal deze router gebruiken in GNS3. 
 
-== DHCPv4 server + DHCP relay
-Volgend netwerk zal opgebouwd worden:
-
-image::images/image5.png[]
-
-De configuratie van de DHCP-SERVER, R2:
-
-* Selecteer **netwerken** voor de DHCP-server:
-
-    /ip dhcp-server network
-    add address=10.0.0.0/24   gateway=10.0.0.1 dns-server=8.8.8.8
-    add address=20.0.0.0/24   gateway=20.0.0.1 dns-server=8.8.8.8
-    add address=99.0.0.0/24   gateway=99.0.0.1 dns-server=8.8.8.8
-    add address=66.66.66.0/24 gateway=66.66.66.2 dns-server=8.8.8.8
-
-* Maak de **nodige pools** aan (welke adressen mogen uitgedeeld worden):
-
-    /ip pool 
-    add name=vlan10-pool ranges=10.0.0.10-10.0.0.50
-    add name=vlan20-pool ranges=20.0.0.10-20.0.0.50,20.0.0.60-20.0.0.67
-    add name=vlan1-pool ranges=99.0.0.50-99.0.0.55
-    add name=66netwerk ranges=66.66.66.50-66.66.66.100
-
-* Link de DHCP-server aan een interface (als er meerdere DHCP-servers aan een interface hangen, maar er een server dienen voor het netwerk, de andere moeten klaarstaan voor een relay):
-
-    /ip dhcp-server
-    add interface=ether2 relay=10.0.0.1 address-pool=vlan10-pool disabled=no
-    add interface=ether2 relay=20.0.0.1 address-pool=vlan20-pool disabled=no
-    add interface=ether2 relay=99.0.0.1 address-pool=vlan1-pool disabled=no
-    add interface=ether2 address-pool=66netwerk disabled=no
-
-
-
 
 == VRF lite
 
