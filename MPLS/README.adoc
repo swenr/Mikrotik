@@ -1,0 +1,4 @@
+= Mikrotik
+Indeze tekst wordt onderstaand netwerk gebouwd.
+
+image:img1.png[]
